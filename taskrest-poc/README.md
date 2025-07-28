@@ -1,13 +1,13 @@
 # Task Rest POC
 
 ## Prerequisites
-- Go 1.24.4
+- Go 1.24.5
   
 ## How to run
 
 ```bash
 go mod tidy
-go run main.go
+go run .
 ```
 
 ## API Usage
@@ -20,15 +20,15 @@ curl -X POST -H "Content-Type: application/json" \
 
 ### List all tasks
 ```bash
-curl http://localhost:8080/tasks
+curl http://localhost:9000/tasks
 ```
 
 ### Mark task as done
 ```bash
-curl -X PUT http://localhost:8080/tasks/1
+curl -X PUT http://localhost:9000/tasks/1
 ```
 
 ### Delete a task
 ```bash
-curl -X DELETE http://localhost:8080/tasks/1
+curl -X DELETE http://localhost:9000/tasks/1
 ```
